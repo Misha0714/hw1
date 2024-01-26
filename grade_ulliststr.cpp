@@ -111,6 +111,7 @@ testing::AssertionResult checkListContent(ULListStr *const list, std::vector<std
 	{
 		if(list->get(index) != expectedValues[index])
 		{
+      
 			failureMessage << "Expected value at index " << index << " was " << expectedValues[index] << ", but element was actually " << list->get(index) << std::endl;
 			contentMismatch = true;
 		}
