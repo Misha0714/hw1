@@ -15,34 +15,34 @@ g++ split.cpp test_split.cpp -o test_split
 int main(int argc, char* argv[])
 {
   //setting nodes 
-  Node n6(6, nullptr); 
-  Node n5(5, &n6);
-  Node n4(4, &n5); 
-  Node n3(3, &n4);
-  Node n2(2, &n3);
-  Node n1(1, &n2);
+  // Node n6(6, nullptr); 
+  // Node n5(5, &n6);
+  // Node n4(4, &n5); 
+  // Node n3(3, &n4);
+  // Node n2(2, &n3);
+  // Node n1(1, &n2);
 
-  Node *in= &n1; 
-  Node *odds = nullptr;
-  Node *evens = nullptr; 
+  // Node *in= &n1; 
+  // Node *odds = nullptr;
+  // Node *evens = nullptr; 
 
-  split(in, odds, evens); 
+  // split(in, odds, evens); 
 
-  //print evens 
-  std::cout << "evens list"<<std::endl;  
-  Node *cnt = evens; 
-  while (cnt!=nullptr) {
-    std::cout << cnt->value << std::endl; 
-    cnt = cnt->next; 
-  }
+  // //print evens 
+  // std::cout << "evens list"<<std::endl;  
+  // Node *cnt = evens; 
+  // while (cnt!=nullptr) {
+  //   std::cout << cnt->value << std::endl; 
+  //   cnt = cnt->next; 
+  // }
 
-  //print odds 
-  std::cout << "odds list"<<std::endl;  
-  cnt = odds; 
-  while (cnt!=nullptr) {
-    std::cout << cnt->value<<std::endl; 
-    cnt = cnt->next; 
-  }
+  // //print odds 
+  // std::cout << "odds list"<<std::endl;  
+  // cnt = odds; 
+  // while (cnt!=nullptr) {
+  //   std::cout << cnt->value<<std::endl; 
+  //   cnt = cnt->next; 
+  // }
    
 
 }
